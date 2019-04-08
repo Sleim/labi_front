@@ -1,0 +1,105 @@
+@import '_device_mixin';
+@import '_normalize';
+
+$green: rgb(14, 155, 14);
+$light-green: rgb(0, 196, 0);
+$dark-green: rgba(0, 102, 0, 0.568);
+$yellow: yellow;
+$orange: rgb(230, 149, 0);
+$light-orange: rgb(255, 166, 0);
+$dark-orange: rgb(196, 127, 0);
+$purple: rgb(155, 0, 129);
+$light-purple: rgba(214, 0, 178, 0.815);
+$blue: rgb(0, 96, 240);
+$light-blue: rgb(0, 225, 255);
+$red: rgb(184, 24, 24);
+$light-red: rgb(241, 64, 64);
+$grey: grey;
+$light-grey: rgb(156, 156, 156);
+$dark-grey: rgb(56, 56, 56);
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 800px;
+    display: flex;
+    justify-content: space-around
+}
+.column{
+
+    button{
+        display: block;
+        margin: 10px 0px;
+        width: 150px;
+        height: 30px;
+        border: 0px;
+        color: white
+    }
+}
+
+.green{
+    background-color: $green
+}
+.light-green{
+    background-color: $light-green
+}
+.dark-green{
+    background-color: $dark-green
+}
+.yellow{
+    background-color: $yellow
+}
+.orange{
+    background-color: $orange
+}
+.light-orange{
+    background-color: $light-orange
+}
+.dark-orange{
+    background-color: $dark-orange
+}
+.purple{
+    background-color: $purple
+}
+.light-purple{
+    background-color: $light-purple
+}
+.blue{
+    background-color: $blue
+}
+.light-blue{
+    background-color: $light-blue
+}
+.red{
+    background-color: $red
+}
+.light-red{
+    background-color: $light-red
+}
+.grey{
+    background-color: $grey
+}
+.light-grey{
+    background-color: $light-grey
+}
+.dark-grey{
+    background-color: $dark-grey
+}
+.rounded-right{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 8px;
+}
+.rounded-left{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 2px;
+}
+.rounded{
+    border-radius: 8px
+}
