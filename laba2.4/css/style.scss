@@ -1,6 +1,13 @@
 @import '_device_mixin';
 @import '_normalize';
 
+@mixin backgroundColor($color) {
+    background-color: $color;
+}
+@mixin borderRadius($topLeft, $topRight, $botLeft, $botRight) {
+    border-radius: $topLeft $topRight $botLeft $botRight;
+}
+
 $green: rgb(14, 155, 14);
 $light-green: rgb(0, 196, 0);
 $dark-green: rgba(0, 102, 0, 0.568);
@@ -41,65 +48,59 @@ body{
 }
 
 .green{
-    background-color: $green
+    @include backgroundColor($green);
 }
 .light-green{
-    background-color: $light-green
+    @include backgroundColor($light-green)
 }
 .dark-green{
-    background-color: $dark-green
+    @include backgroundColor($dark-green)
 }
 .yellow{
-    background-color: $yellow
+    @include backgroundColor($yellow)
 }
 .orange{
-    background-color: $orange
+    @include backgroundColor($orange)
 }
 .light-orange{
-    background-color: $light-orange
+    @include backgroundColor($light-orange)
 }
 .dark-orange{
-    background-color: $dark-orange
+    @include backgroundColor($dark-orange)
 }
 .purple{
-    background-color: $purple
+    @include backgroundColor($purple)
 }
 .light-purple{
-    background-color: $light-purple
+    @include backgroundColor($light-purple)
 }
 .blue{
-    background-color: $blue
+    @include backgroundColor($blue)
 }
 .light-blue{
-    background-color: $light-blue
+    @include backgroundColor($light-blue)
 }
 .red{
-    background-color: $red
+    @include backgroundColor($red)
 }
 .light-red{
-    background-color: $light-red
+    @include backgroundColor($light-red)
 }
 .grey{
-    background-color: $grey
+    @include backgroundColor($grey)
 }
 .light-grey{
-    background-color: $light-grey
+    @include backgroundColor($light-grey)
 }
 .dark-grey{
-    background-color: $dark-grey
+    @include backgroundColor($dark-grey)
 }
 .rounded-right{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 8px;
+    @include borderRadius (2px, 8px, 2px, 8px);
 }
 .rounded-left{
-    border-top-left-radius: 2px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 2px;
+    @include borderRadius (8px, 2px, 8px, 2px);
 }
 .rounded{
-    border-radius: 8px
+    @include borderRadius (8px, 8px, 8px, 8px);
 }

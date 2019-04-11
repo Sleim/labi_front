@@ -466,20 +466,14 @@ body {
 }
 
 .rounded-right {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 8px;
+  border-radius: 2px 8px 2px 8px;
 }
 
 .rounded-left {
-  border-top-left-radius: 2px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 2px;
+  border-radius: 8px 2px 8px 2px;
 }
 
 .rounded {
-  border-radius: 8px;
+  border-radius: 8px 8px 8px 8px;
 }
 /*# sourceMappingURL=style.css.map */
